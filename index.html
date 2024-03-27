@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Overlay -->
+    <div class="background-overlay"></div>
+    <!-- Heading -->
+    <h1>Welcome to Smoothie Machine!</h1>
+    <!-- Smoothie Order Form -->
+    <form id="smoothieForm">
+        <!-- Flavor Selection -->
+        <label for="flavor">Select Flavor:</label>
+        <select id="flavor" name="flavor">
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+        </select><br>
+        <!-- Toppings Selection -->
+        <label for="toppings">Select Toppings:</label><br>
+        <input type="checkbox" id="chocolate" name="toppings" value="chocolate">
+        <label for="chocolate">Chocolate</label><br>
+        <input type="checkbox" id="nuts" name="toppings" value="nuts">
+        <label for="nuts">Nuts</label><br>
+        <input type="checkbox" id="berries" name="toppings" value="berries">
+        <label for="berries">Berries</label><br>
+        <!-- Size Selection -->
+        <label for="size">Select Size:</label>
+        <div class="size-images">
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">Small</label>
+            <img src="1.jpg" alt="Small Smoothie" class="size-image">
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>
+            <img src="2.jpg" alt="Medium Smoothie" class="size-image">
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label>
+            <img src="3.jpg" alt="Large Smoothie" class="size-image">
+        </div>
+        <!-- Order Button -->
+        <button type="button" id="orderButton">Order</button>
+    </form>
+
+    <!-- Smoothie Output -->
+    <div id="smoothieOutput"></div>
+
+    <!-- JavaScript -->
+    <script src="smoothie.js"></script>
+    
+</body>
+</html>
